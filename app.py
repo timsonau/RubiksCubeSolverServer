@@ -25,22 +25,6 @@ def returnHome():
      return jsonify({
          'message' : 'hello world'
      })
-
-
-@app.route('/api/solveCube')
-def solveCube():
-    '''Return face rotation solution set'''
-    try:
-        userParms = _parseParms(request.args)
-        result = solve(userParms)
-        print("Response -->", str(result))
-        print(jsonify(result))
-        return jsonify({
-         'message' : 'hello world'
-     })
-    except Exception as anyException:
-        return str(anyException)
-    
 #-----------------------------------
 #  The following code is invoked with the path portion of the URL matches
 #         /
@@ -126,5 +110,4 @@ def _getAuthor(sbomDirectory = ''):
 
 
 if __name__ == "__main__":
-    port = os.getenv('PORT', '8080')
-    app.run(debug=True, host = '0.0.0.0', port = int(port))
+    app.run()
