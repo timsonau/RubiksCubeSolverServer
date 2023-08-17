@@ -107,7 +107,6 @@ def _getAuthor(sbomDirectory = ''):
     return {'author': author}
  
 #-----------------------------------
-
-
 if __name__ == "__main__":
-    app.run()
+    port = os.getenv('PORT', '8080')
+    app.run(debug=False, host = '0.0.0.0', port = int(port))

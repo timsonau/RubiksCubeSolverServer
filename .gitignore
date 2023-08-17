@@ -128,8 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Eclipse
-.project
-.pydevproject
-.settings
-.settings/
+# Exclude the .dockerignore file
+.dockerignore
