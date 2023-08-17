@@ -1,0 +1,1 @@
+# RubiksCubeSolverServer (![Rubiks Cube]([http://url/to/img.png](https://en.wikipedia.org/wiki/Optimal_solutions_for_Rubik%27s_Cube#/media/File:Scramble.svg)https://en.wikipedia.org/wiki/Optimal_solutions_for_Rubik%27s_Cube#/media/File:Scramble.svg))
